@@ -19,7 +19,7 @@ bun run index.js
 3. C言語のコードをコンパイルして共有ライブラリを作成し、読み込む場合は以下のコマンドを実行します。
 
 ```bash
-gcc -shared -o libcalculator.so -fPIC calculator.c
+gcc -shared -o libcalculator.dylib -fPIC calculator.c
 bun run compiled.js
 ```
 
