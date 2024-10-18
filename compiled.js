@@ -1,7 +1,9 @@
 import { dlopen, FFIType, suffix } from "bun:ffi";
 
 // 共有ライブラリのパスを動的に生成
-const path = `libcalculator.${suffix}`;
+const path = `./libcalculator.${suffix}`;
+
+console.log("Loading library from:", path);
 
 // ライブラリを読み込み、関数をインポート
 const lib = dlopen(path, {
